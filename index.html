@@ -9,35 +9,37 @@
   <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 <body>
-  <header class="header-banner">
-    <h1>Cody Wenrich</h1>
+  <header class="header-banner nav-bar">
+    <div class="banner">
+      <h1>Cody Wenrich</h1>
+    </div>
     <nav>
       <ul>
-	<li><a href=".#about-me">About Me</a></li>
-	<li><a href=".#work">Work</a></li>
-	<li><a href=".#contact-me">Contact Me</a></li>
+	<li><a href="#about-me">About Me</a></li>
+	<li><a href="#work">Work</a></li>
+	<li><a href="#contact-me">Contact Me</a></li>
 	<li><a href="file://./assets/files/Cody_Wenrich-Resume.pdf">Resume</a></li>
       </ul>
     </nav>
   </header>
   <main>
-
-    <section  class="portfolio-section">
+    <div id="about-me" class="portfolio-section justify-center">
       <!-- About me text,
 	   with header that shifts left vert. to top on mobile -->
-      <h2 id="about-me">About Me</h2>
+      <h2 class="center-to-left">About Me</h2>
       <!-- idea to have about me be a block with only the right sideborder
 	   then as it slides to the center the line slides to the bottom
       -->
-      <article>
-	This is where the abou me text is going tobe located
-      </article>
-    </section>
+      <p>
+	I currently a PRoejct Lader at Bendix CVS focuned primrily on damper products and some plastic parts.
+	Secon
+      </p>
+    </div>
 
-    <section class="portfolio-section">
+    <div id="work" class="portfolio-section justify-center">
       <!-- Work images/links, images fade(opaity) 
 	   with header that shifts left vert. to top on mobile -->
-      <h2 id="work" class="left-to-center">Work History</h2>
+      <h2 class="left-to-center">Work</h2>
       <ul>
 	<li><a href="">Project one</a></li>
 	<li><a href="">Project two</a></li>
@@ -46,23 +48,20 @@
 	<li><a href="">Project five</a></li>
 	<li><a href="https://github.com/cwen13?tab=repositories">Other works</a></li>
       </ul>
-    </section>
+    </div>
 
-    <section  class=" portfolio-section">
+    <div id="contact-me" class=" portfolio-section">
       <!-- List of contact info, images fade(opaity)
            with header that shifts left vert. to top on mobile -->
-      <h2 id="contact-me" class="left-to-center">Contact</h2>
+      <h2 class="left-to-center">Contact</h2>
       <ul>
-	<li class="phone">(440)213-1947</li>
+	<li>(440)213-1947</li>
 	<li><a href="">email</a></li>
 	<li><a href="https://github.com/cwen13">github</a></li>
 	<li><a href="https://twitter.com/CodyWenrich">twitter</a></li>
       </ul>
       
-      
-      
-      
-    </section>
+    </div>
     
     <footer>
       <h3>Created by Cody Wenrich</h3>

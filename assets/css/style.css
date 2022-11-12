@@ -1,11 +1,42 @@
 :root {
+  --title-color: red;
+  --text-color: maroon;
 }
 
 * {
 }
 
 header {
+    padding: 20px;
+    
 }
+header div {
+    
+    background-color: yellow;
+    justify-content: left;
+}
+header h1 {
+    display: inline-block;
+    justify-content: right;
+}
+
+header nav {
+  display: inline-block;
+    margin-right: 20px;
+    float: inline-end;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header nav ul{
+    list-style-type: none;
+
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 20px;
+}			
 
 h1 {
 }
@@ -16,9 +47,15 @@ nav {
     
 }
 
-article {
+p {
 }
 
+
+.banner {
+    background: var(--title-color);
+    color: purple;
+    text-size: 40px;
+}
 
 /* This was taken from Module 01 challlenge */
 .header-banner {
@@ -30,9 +67,9 @@ article {
     background-position: center;
 }
 
-.phone {
-/*  highlight adn copy on phone/tablet */
+.nav-bar {
 }
+
 
 
 /* Taken from module 02 miniproject */
