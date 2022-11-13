@@ -4,18 +4,18 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CSS Snippet Cheatsheet</title>
-  <link rel="stylesheet" href="assets/css/reset.css" />
-  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/reset.css"/>
+  <link rel="stylesheet" href="./assets/css/style.css"/>
+  <title>CWW Portfolio</title>
 </head>
 <body>
-  <header class="header-banner nav-bar">
+  <header class="header-banner">
     <div class="banner">
       <h1>Cody Wenrich</h1>
     </div>
     <nav>
       <ul>
-	<li><a href="#about-me">About Me</a></li>
+      	<li><a href="#about-me">About Me</a></li>
 	<li><a href="#work">Work</a></li>
 	<li><a href="#contact-me">Contact Me</a></li>
 	<li><a href="file://./assets/files/Cody_Wenrich-Resume.pdf">Resume</a></li>
@@ -24,24 +24,26 @@
   </header>
   <main>
     <div id="about-me" class="portfolio-section justify-center">
-      <!-- About me text,
-	   with header that shifts left vert. to top on mobile -->
+      <!-- About me text, with header that shifts left vert. to top on mobile -->
       <h2 class="center-to-left">About Me</h2>
       <!-- idea to have about me be a block with only the right sideborder
-	   then as it slides to the center the line slides to the bottom
-      -->
+	   then as it slides to the center the line slides to the bottom -->
+      <div class="about-me">
       <p>
-	I currently a PRoejct Lader at Bendix CVS focuned primrily on damper products and some plastic parts.
-	Secon
+	I currently a Proejct Lader at Bendix CVS focuned primrily on damper products and some plastic parts. In this role I manage multi-deparmental teams in design review of products. Thi includes when we switch a supplier, indtroduce a new part, or there is an improvement and new tooling is required. Daily I manage multiple projects and maintain thier progress in ERP system tracking these changes.
       </p>
+      <p>
+	I am a largely self-taught programmer who is now in the process of taking a codecmap through CWRU. I hope this will give me the formal and in demand skills in the current wed developemnt job market. 
+      </p>
+      </div>
     </div>
 
     <div id="work" class="portfolio-section justify-center">
       <!-- Work images/links, images fade(opaity) 
 	   with header that shifts left vert. to top on mobile -->
-      <h2 class="left-to-center">Work</h2>
+      <h2 class="center-to-left">Work</h2>
       <ul>
-	<li><a href="">Project one</a></li>
+	<li id="project-one"><a href="">Project one</a></li>
 	<li><a href="">Project two</a></li>
 	<li><a href="">Project three</a></li>
 	<li><a href="">Project four</a></li>
@@ -50,17 +52,18 @@
       </ul>
     </div>
 
-    <div id="contact-me" class=" portfolio-section">
+    <div id="contact-me" class="portfolio-section">
       <!-- List of contact info, images fade(opaity)
            with header that shifts left vert. to top on mobile -->
-      <h2 class="left-to-center">Contact</h2>
+      <h2 class="center-to-left">Contact</h2>
+      <div class="horz-list">
       <ul>
 	<li>(440)213-1947</li>
-	<li><a href="">email</a></li>
+	<li><a href="mailto:cwenrich13@gmail.com">email</a></li>
 	<li><a href="https://github.com/cwen13">github</a></li>
 	<li><a href="https://twitter.com/CodyWenrich">twitter</a></li>
       </ul>
-      
+      </div>
     </div>
     
     <footer>

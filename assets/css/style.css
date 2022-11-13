@@ -6,85 +6,128 @@
 * {
 }
 
-header {
-    padding: 20px;
-    
-}
-header div {
-    
-    background-color: yellow;
-    justify-content: left;
-}
-header h1 {
-    display: inline-block;
-    justify-content: right;
+html {
+      /* set 1rem to 10px instead of native 16px to make it easier to calculate font-size values for the rest of the page (e.g. 1.6rem is 16px, 2.0rem is 20px, etc.) */
+    font-size: 62.5%;
 }
 
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+header div {
+    padding-right: 25%;
+} 
+
 header nav {
-  display: inline-block;
-    margin-right: 20px;
+    margin-right: 2rem;
     float: inline-end;
-    font-size: 20px;
+    font-size: 2rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 header nav ul{
-    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap:wrap;
 
 }
 
 header nav ul li {
-    display: inline-block;
-    padding: 0 20px;
+    padding: 0rem 2rem;
 }			
 
-h1 {
-}
 
-nav {
-    display: flex;
-    flex-direction: row;
+h2 {
+    font-size: 2.5rem;
+}
     
-}
-
 p {
+    font-size: 1.5rem
 }
 
 
-.banner {
-    background: var(--title-color);
-    color: purple;
-    text-size: 40px;
+footer {
+    margin: 0px;
+    padding: 25px;
+    background-color: grey;
+    color: white;
+    text-align: center;
+}
+
+.center-to-left {
+    width: 12.5%;
 }
 
 /* This was taken from Module 01 challlenge */
 .header-banner {
-    height: 800px;
+    background-color: aqua;
+    height: 200px;
     width: 100%;
-    margin-bottom: 25px;
-    background-image: url("../images/banner.jpg");
+    background-image: url("assets/images/banner-place-holder.png");
     background-size: cover;
     background-position: center;
 }
 
-.nav-bar {
+
+.portfolio-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
+
+.about-me  {
+    width: 100%
+    display: flex;
+    flex-direction: column;
+}
+
+.horz-list {
+    width: 100%;
+}
+
+
+.horz-list ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}    
+
+#about-me ~ p {
+    display: flex;
+    flex-direction: column;
+}
+
+#work{
+    font-size: 1.5rem;
+}
+
+#project-one {
+    font-size: 2rem;
+    width: 100%;
+}
 
 
 /* Taken from module 02 miniproject */
 /* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
 @media screen and (min-width: 768px) {
-  /* on tablets, set columns to only be 50% of the width and not grow */
-  .card-column {
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
+    .about-me  {
+	width: 87.5%;
+    }
+    .horz-list {
+    width: 87.5%;
+    }
 
-  /* select the last child to grow to full width if it has space to grow */
-  .card-column:last-child {
-    flex-grow: 1;
-  }
+  
 }
 
 /* media query for larger screens */
