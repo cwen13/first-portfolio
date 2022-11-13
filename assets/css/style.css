@@ -45,7 +45,6 @@ header nav ul li {
     padding: 0rem 2rem;
 }			
 
-
 h2 {
     font-size: 2.5rem;
 }
@@ -64,15 +63,15 @@ footer {
 }
 
 .center-to-left {
-    width: 12.5%;
+    width: 100%;
+    justify-content: center;
 }
-
 /* This was taken from Module 01 challlenge */
 .header-banner {
     background-color: aqua;
     height: 200px;
     width: 100%;
-    background-image: url("assets/images/banner-place-holder.png");
+    background-image: url("./assets/images/banner-place-holder.png");
     background-size: cover;
     background-position: center;
 }
@@ -84,7 +83,6 @@ footer {
     flex-wrap: wrap;
 }
 
-
 .about-me  {
     width: 100%
     display: flex;
@@ -95,12 +93,15 @@ footer {
     width: 100%;
 }
 
-
 .horz-list ul {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-}    
+    align-content: center;
+    font-size: 1.5rem;
+    flex-wrap:wrap;
+    margin: 0.5rem 2rem 0.5rem 2rem;
+}   
 
 #about-me ~ p {
     display: flex;
@@ -111,11 +112,24 @@ footer {
     font-size: 1.5rem;
 }
 
+#work ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap
+}
+
+#work ul li ~ li {
+    width: 100%;
+}
+
 #project-one {
     font-size: 2rem;
     width: 100%;
 }
 
+#other-work a {
+    width: 100%;
+}
 
 /* Taken from module 02 miniproject */
 /* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
@@ -124,7 +138,13 @@ footer {
 	width: 87.5%;
     }
     .horz-list {
-    width: 87.5%;
+	width: 87.5%;
+    }
+    .center-to-left {
+	width: 12.5%;
+    }
+    #work ul li ~ li {
+	width: 50%;
     }
 
   
