@@ -1,0 +1,143 @@
+:root {
+  --title-color: red;
+  --text-color: maroon;
+}
+
+* {
+}
+
+html {
+      /* set 1rem to 10px instead of native 16px to make it easier to calculate font-size values for the rest of the page (e.g. 1.6rem is 16px, 2.0rem is 20px, etc.) */
+    font-size: 62.5%;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+header div {
+    padding-right: 25%;
+} 
+
+header nav {
+    margin-right: 2rem;
+    float: inline-end;
+    font-size: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap:wrap;
+
+}
+
+header nav ul li {
+    padding: 0rem 2rem;
+}			
+
+
+h2 {
+    font-size: 2.5rem;
+}
+    
+p {
+    font-size: 1.5rem
+}
+
+
+footer {
+    margin: 0px;
+    padding: 25px;
+    background-color: grey;
+    color: white;
+    text-align: center;
+}
+
+.center-to-left {
+    width: 12.5%;
+}
+
+/* This was taken from Module 01 challlenge */
+.header-banner {
+    background-color: aqua;
+    height: 200px;
+    width: 100%;
+    background-image: url("assets/images/banner-place-holder.png");
+    background-size: cover;
+    background-position: center;
+}
+
+
+.portfolio-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+.about-me  {
+    width: 100%
+    display: flex;
+    flex-direction: column;
+}
+
+.horz-list {
+    width: 100%;
+}
+
+
+.horz-list ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}    
+
+#about-me ~ p {
+    display: flex;
+    flex-direction: column;
+}
+
+#work{
+    font-size: 1.5rem;
+}
+
+#project-one {
+    font-size: 2rem;
+    width: 100%;
+}
+
+
+/* Taken from module 02 miniproject */
+/* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
+@media screen and (min-width: 768px) {
+    .about-me  {
+	width: 87.5%;
+    }
+    .horz-list {
+    width: 87.5%;
+    }
+
+  
+}
+
+/* media query for larger screens */
+@media screen and (min-width: 992px) {
+  header {
+    width: 75%;
+  }
+
+  .card-column {
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+  }
+}
