@@ -53,6 +53,25 @@ p {
     font-size: 1.5rem
 }
 
+figure {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+figure img {
+    width: 100%;
+    border: solid 1.5rem;
+    border-color: pink;
+    margin: 0.5rem;
+}
+
+figure figcaption {
+    margin: -5rem 0rem 0rem 0rem;
+    background-color: pink;
+    padding: 0.5rem 1.5rem 0rem 1.5rem;
+    color: black;
+}
 
 footer {
     margin: 0px;
@@ -83,6 +102,7 @@ align-content: bottom;
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
+    margin: 1rem;
 }
 
 .about-me  {
@@ -106,6 +126,12 @@ align-content: bottom;
     margin: 0.5rem 2rem 0.5rem 2rem;
 }   
 
+.center-to-left {
+    border-style: none none solid none;
+    border-color: black;
+    border-width: 0.75rem;
+}
+
 #about-me ~ p {
     display: flex;
     flex-direction: column;
@@ -118,7 +144,7 @@ align-content: bottom;
 #work ul {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap
+    flex-wrap: wrap;
 }
 
 #work ul li ~ li {
@@ -144,6 +170,11 @@ align-content: bottom;
         justify-content: flex-end;
         flex-wrap:wrap;
         align-content: center;
+    }
+    .center-to-left{
+        border-style: none solid none none;
+        border-color: black;
+        border-width: 0.75rem;
     }
     .about-me  {
 	width: 87.5%;
