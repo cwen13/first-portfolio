@@ -16,35 +16,36 @@ header {
     flex-direction: row;
     justify-content: flex-end;
     flex-wrap: wrap;
+    align-content: center;
+    /* padding-bottom: 25%; */
 }
 
 h1 {
     font-size: 4rem;
 }
-
 header div {
-    padding-right: 25%;
-} 
-
+    align-items: flex-start;
+}
 header nav {
     margin-right: 2rem;
     float: inline-end;
     font-size: 2rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    align-items: center;
 }
 
 header nav ul{
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: spacae-evenly;
     flex-wrap:wrap;
-
+    align-content: center;
 }
 
 header nav ul li {
-    padding: 0rem 2rem;
+    margin: 1rem 2rem 1rem 2rem;
 }			
-
 
 h2 {
     font-size: 2.5rem;
@@ -63,16 +64,16 @@ footer {
     text-align: center;
 }
 
-.center-to-left {
-    width: 12.5%;
+.tagline {
+align-content: bottom;
 }
 
 /* This was taken from Module 01 challlenge */
 .header-banner {
     background-color: aqua;
-    height: 200px;
+    height: 35rem;
     width: 100%;
-    background-image: url("assets/images/banner-place-holder.png");
+    background-image: url("./assets/images/banner-place-holder.png");
     background-size: cover;
     background-position: center;
 }
@@ -82,25 +83,30 @@ footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
 }
 
-
 .about-me  {
-    width: 100%
     display: flex;
     flex-direction: column;
 }
 
+.about-me,
+.projects,
 .horz-list {
     width: 100%;
 }
-
 
 .horz-list ul {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-}    
+    align-content: center;
+    font-size: 1.5rem;
+    flex-wrap:wrap;
+    margin: 0.5rem 2rem 0.5rem 2rem;
+}   
 
 #about-me ~ p {
     display: flex;
@@ -111,20 +117,50 @@ footer {
     font-size: 1.5rem;
 }
 
+#work ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap
+}
+
+#work ul li ~ li {
+    width: 100%;
+}
+
 #project-one {
     font-size: 2rem;
     width: 100%;
 }
 
+#other-work a {
+    width: 100%;
+}
 
 /* Taken from module 02 miniproject */
 /* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
 @media screen and (min-width: 768px) {
+
+    header nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        flex-wrap:wrap;
+        align-content: center;
+    }
     .about-me  {
 	width: 87.5%;
     }
     .horz-list {
-    width: 87.5%;
+	width: 87.5%;
+    }
+    .projects {
+        width: 87.5%;
+    }
+    .center-to-left {
+	width: 12.5%;
+    }
+    #work ul li ~ li {
+	width: 50%;
     }
 
   
@@ -135,6 +171,10 @@ footer {
   header {
     width: 75%;
   }
+  header div {
+    padding-right: 25%;
+} 
+
 
   .card-column {
     flex: 0 0 33.333%;
