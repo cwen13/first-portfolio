@@ -1,5 +1,5 @@
 :root {
-  --title-color: red;
+  --project-border: red;
   --text-color: maroon;
 }
 
@@ -7,7 +7,9 @@
 }
 
 html {
-      /* set 1rem to 10px instead of native 16px to make it easier to calculate font-size values for the rest of the page (e.g. 1.6rem is 16px, 2.0rem is 20px, etc.) */
+    /* set 1rem to 10px instead of native 16px to make it easier to calculate
+       font-size values for the rest of the page (e.g. 1.6rem is 16px, 2.0rem 
+       is 20px, etc.) */
     font-size: 62.5%;
 }
 
@@ -42,7 +44,7 @@ header nav ul{
 }
 
 header nav ul li {
-    margin: 1rem 2rem 1rem 2rem;
+    margin: 1rem 0.5rem 1rem 0.5rem;
 }			
 
 h2 {
@@ -62,18 +64,18 @@ figure {
 
 figure img {
     width: 100%;
-    border: solid 2.5rem;
-    border-color: pink;
+    border: solid 1rem;
+    border-color: var(--project-border);
     margin: 0.5rem;
 }
 
 figure figcaption {
-    background-color: pink;
+    background-color: var(--project-border);
     padding: 0.5rem 0.5rem 0.5rem 0.5rem;
     color: black;
     position: relative;
     top: -10rem;
-    left: -37.5%;
+    right: 25%%;
 }
 
 footer {
@@ -162,14 +164,14 @@ header {
     width: 100%;
 }
 
-#work ul li a figcaption {
-    padding: 1rem;
- 
-}
 
 #project-one {
-    font-size: 2rem;
     width: 100%;
+}
+    
+#project-one figcaption {
+    position: relative;
+    right: 25%;
 }
 
 #other-work a {
@@ -177,13 +179,13 @@ header {
 }
 
 /* Taken from module 02 miniproject */
-/* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
+/* using a mobile-first approach, use `min-width` values going from narrow -> 
+   wide for a responsive design */
 @media screen and (min-width: 768px) {
 
     .banner {
         margin: 0 25% 0 0;
     }
-
     header nav ul{
         display: flex;
         flex-direction: row;
