@@ -93,7 +93,7 @@ header {
     background-color: aqua;
     height: 35rem;
     width: 100%;
-    background-image: url("./assets/images/banner-place-holder.png");
+    background-image: url("/assets/images/banner-place-holder.png");
     background-size: cover;
     background-position: center;
 }
