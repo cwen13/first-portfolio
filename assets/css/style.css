@@ -59,18 +59,21 @@ figure {
     flex-wrap: wrap;
     justify-content: center;
 }
+
 figure img {
     width: 100%;
-    border: solid 1.5rem;
+    border: solid 2.5rem;
     border-color: pink;
     margin: 0.5rem;
 }
 
 figure figcaption {
-    margin: -5rem 0rem 0rem 0rem;
     background-color: pink;
-    padding: 0.5rem 1.5rem 0rem 1.5rem;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
     color: black;
+    position: relative;
+    top: -10rem;
+    left: -37.5%;
 }
 
 footer {
@@ -157,6 +160,11 @@ header {
 
 #work ul li ~ li {
     width: 100%;
+}
+
+#work ul li a figcaption {
+    padding: 1rem;
+ 
 }
 
 #project-one {
