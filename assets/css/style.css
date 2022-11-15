@@ -75,7 +75,7 @@ figure figcaption {
     color: black;
     position: relative;
     top: -10rem;
-    right: 25%%;
+    right: 25%;
 }
 
 footer {
@@ -87,18 +87,18 @@ footer {
 }
 
 .tagline {
- display: flex;
- flex-direction: row;
- justify-content: flex-end;
- align-items: flex-end; 
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 /* This was taken from Module 01 challlenge */
 header {
-    background-color: aqua;
+/*    background-color: aqua;*/
     height: 35rem;
     width: 100%;
-    background-image: url("/assets/images/banner-place-holder.png");
+    background-image: url("../images/banner-place-holder.png");
     background-size: cover;
     background-position: center;
 }
