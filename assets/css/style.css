@@ -90,18 +90,20 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    align-items: center;
-}
-
-/* This was taken from Module 01 challlenge */
-header {
-/*    background-color: aqua;*/
+    align-items: flex-end;
     height: 35rem;
     width: 100%;
-    background-image: url("../images/banner-place-holder.png");
+    background: url("../images/banner-place-holder.png");
     background-size: cover;
     background-position: center;
+
 }
+
+.tagline p {
+    margin:0rem 0rem 5rem 0rem;
+    background: pink;
+    }
+
 
 
 .portfolio-section {
@@ -126,7 +128,7 @@ header {
 
 .header-banner {
     background-color: yellow;
-    padding: .5rem 0rem 1rem 0rem;
+    padding: .5rem 0rem 0rem 0rem;
 }
 
 .horz-list ul {
@@ -212,6 +214,10 @@ header {
     }
     #work ul li ~ li {
 	width: 50%;
+    }
+    #project-one figcaption {
+    position: relative;
+    right: 37.5%;
     }
 
   
