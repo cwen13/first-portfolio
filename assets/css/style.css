@@ -1,5 +1,5 @@
 :root {
-  --title-color: red;
+  --project-border: red;
   --text-color: maroon;
 }
 
@@ -7,32 +7,32 @@
 }
 
 html {
-      /* set 1rem to 10px instead of native 16px to make it easier to calculate font-size values for the rest of the page (e.g. 1.6rem is 16px, 2.0rem is 20px, etc.) */
+    /* set 1rem to 10px instead of native 16px to make it easier to calculate
+       font-size values for the rest of the page (e.g. 1.6rem is 16px, 2.0rem 
+       is 20px, etc.) */
     font-size: 62.5%;
 }
 
-header {
+header .header-banner {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     flex-wrap: wrap;
-    align-content: center;
-    /* padding-bottom: 25%; */
+    align-content: flex-start;
+    width: 100%;
 }
 
 h1 {
     font-size: 4rem;
 }
-header div {
-    align-items: flex-start;
-}
+
+
 header nav {
     margin-right: 2rem;
     float: inline-end;
     font-size: 2rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: flex;
-    align-items: center;
 }
 
 header nav ul{
@@ -44,7 +44,7 @@ header nav ul{
 }
 
 header nav ul li {
-    margin: 1rem 2rem 1rem 2rem;
+    margin: 1rem 0.5rem 1rem 0.5rem;
 }			
 
 h2 {
@@ -61,18 +61,21 @@ figure {
     flex-wrap: wrap;
     justify-content: center;
 }
+
 figure img {
     width: 100%;
-    border: solid 1.5rem;
-    border-color: pink;
+    border: solid 1rem;
+    border-color: var(--project-border);
     margin: 0.5rem;
 }
 
 figure figcaption {
-    margin: -5rem 0rem 0rem 0rem;
-    background-color: pink;
-    padding: 0.5rem 1.5rem 0rem 1.5rem;
+    background-color: var(--project-border);
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
     color: black;
+    position: relative;
+    top: -10rem;
+    right: 25%;
 }
 
 footer {
@@ -84,18 +87,23 @@ footer {
 }
 
 .tagline {
-align-content: bottom;
-}
-
-/* This was taken from Module 01 challlenge */
-.header-banner {
-    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
     height: 35rem;
     width: 100%;
-    background-image: url("./assets/images/banner-place-holder.png");
+    background: url("../images/banner-place-holder.png");
     background-size: cover;
     background-position: center;
+
 }
+
+.tagline p {
+    margin:0rem 0rem 5rem 0rem;
+    background: pink;
+    }
+
 
 
 .portfolio-section {
@@ -116,6 +124,11 @@ align-content: bottom;
 .projects,
 .horz-list {
     width: 100%;
+}
+
+.header-banner {
+    background-color: yellow;
+    padding: .5rem 0rem 0rem 0rem;
 }
 
 .horz-list ul {
@@ -153,9 +166,14 @@ align-content: bottom;
     width: 100%;
 }
 
+
 #project-one {
-    font-size: 2rem;
     width: 100%;
+}
+    
+#project-one figcaption {
+    position: relative;
+    right: 25%;
 }
 
 #other-work a {
@@ -163,9 +181,13 @@ align-content: bottom;
 }
 
 /* Taken from module 02 miniproject */
-/* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
+/* using a mobile-first approach, use `min-width` values going from narrow -> 
+   wide for a responsive design */
 @media screen and (min-width: 768px) {
 
+    .banner {
+        margin: 0 25% 0 0;
+    }
     header nav ul{
         display: flex;
         flex-direction: row;
@@ -193,22 +215,16 @@ align-content: bottom;
     #work ul li ~ li {
 	width: 50%;
     }
+    #project-one figcaption {
+    position: relative;
+    right: 37.5%;
+    }
 
   
 }
 
 /* media query for larger screens */
 @media screen and (min-width: 992px) {
-  header {
-    width: 75%;
-  }
-  header div {
-    padding-right: 25%;
-} 
 
 
-  .card-column {
-    flex: 0 0 33.333%;
-    max-width: 33.333%;
-  }
 }
