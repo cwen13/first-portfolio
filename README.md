@@ -11,7 +11,7 @@ interactive web portfolio.
 
 ## Usage
 
-Useage is simple just navigate to the URL.
+Useage is simple just navigate to the [URL](https://cwen13.github.io/first-portfolio/).
 
 ## Credits
 
