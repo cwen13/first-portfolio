@@ -1,6 +1,8 @@
 :root {
   --project-border: red;
   --text-color: maroon;
+  --background-color: grey;
+  --nav-bar-color: black;
 }
 
 * {
@@ -11,6 +13,7 @@ html {
        font-size values for the rest of the page (e.g. 1.6rem is 16px, 2.0rem 
        is 20px, etc.) */
     font-size: 62.5%;
+    background: var(--background-color);
 }
 
 header .header-banner {
@@ -26,6 +29,7 @@ h1 {
     font-size: 4rem;
     text-align: center;
     width: 100vw;
+    color: magenta;
 }
 
 
@@ -55,7 +59,7 @@ h2 {
 }
 
 p {
-    font-size: 1.5rem
+    font-size: 1.75rem;
 }
 
 figure {
@@ -137,7 +141,7 @@ footer {
 }
 
 .header-banner {
-    background-color: yellow;
+    background-color: var(--nav-bar-color);
     padding: .5rem 0rem 0rem 0rem;
 }
 
