@@ -1,3 +1,4 @@
+/* Some variable used for colors through out the file */
 :root {
   --project-border: red;
   --text-color: maroon;
@@ -5,9 +6,12 @@
   --nav-bar-color: black;
 }
 
+/* place holder for universal styles */
 * {
 }
 
+/* Getting into element selector this tag sets of general features of the
+   page */
 html {
     /* set 1rem to 10px instead of native 16px to make it easier to calculate
        font-size values for the rest of the page (e.g. 1.6rem is 16px, 2.0rem 
@@ -16,6 +20,23 @@ html {
     background: var(--background-color);
 }
 
+/* Some text centric elements */
+h1 {
+    font-size: 4rem;
+    text-align: center;
+    width: 100vw;
+    color: magenta;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: 1.75rem;
+}
+
+/* Styling the header nav bar and banner */
 header .header-banner {
     display: flex;
     flex-direction: row;
@@ -24,14 +45,6 @@ header .header-banner {
     align-content: flex-start;
     width: 100%;
 }
-
-h1 {
-    font-size: 4rem;
-    text-align: center;
-    width: 100vw;
-    color: magenta;
-}
-
 
 header nav {
     font-size: 2rem;
@@ -54,14 +67,7 @@ header nav ul li {
     margin: 1rem 0.5rem 1rem 0.5rem;
 }			
 
-h2 {
-    font-size: 2.5rem;
-}
-
-p {
-    font-size: 1.75rem;
-}
-
+/* Setting up the styling for the figures and captions */
 figure {
     display: flex;
     flex-direction: row;
@@ -69,12 +75,11 @@ figure {
     justify-content: center;
 }
 
+/*  Pseudo-class to acto on projects when hovered over */
 figure:hover > figcation,
 figure:hover{
     opacity: 0.5;
 }
-
-
 
 figure img {
     width: 100%;
@@ -91,14 +96,17 @@ figure figcaption {
     top: -3rem;
 }
 
+/* Footer styles */
 footer {
     margin: 0px;
     padding: 25px;
-    background-color: grey;
+    background-color: var(--nav-bar-color);
     color: white;
     text-align: center;
 }
 
+/* Class selectors Setting up the tag line with the header banner background
+   image */
 .tagline {
     display: flex;
     flex-direction: row;
@@ -112,9 +120,16 @@ footer {
 
 }
 
+/* Setting up nav bar style */
+.header-banner {
+    background-color: var(--nav-bar-color);
+    padding: .5rem 0rem 0rem 0rem;
+}
+
+/* Tagline styling */
 .tagline p {
-     /* Monospace font stack is used for our code blocks to make it look more like code */
-  font-family: Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console',
+     /* Monospace font */
+    font-family: Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console',
     'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
     'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier,
     monospace;
@@ -124,8 +139,7 @@ footer {
     font-size: 2.5rem;
     }
 
-
-
+/* Styling each section of the body of the page */
 .portfolio-section {
     display: flex;
     flex-direction: row;
@@ -135,12 +149,13 @@ footer {
     margin: 1rem;
 }
 
+/* Setting up the two paragraphs to stack ontop of each other rather than wrap */
 .about-me  {
     display: flex;
     flex-direction: column;
 }
 
-
+/* General styles for each section */
 .about-me,
 .projects,
 .horz-list {
@@ -148,11 +163,14 @@ footer {
     padding:0.5rem;
 }
 
-.header-banner {
-    background-color: var(--nav-bar-color);
-    padding: .5rem 0rem 0rem 0rem;
+/* Styling the left side section apperance */
+.center-to-left {
+    border-style: none none solid none;
+    border-color: black;
+    border-width: 0.75rem;
 }
 
+/* Getting the contacts to sit in horizontal line and wrap when window closes */
 .horz-list ul {
     display: flex;
     flex-direction: row;
@@ -163,19 +181,10 @@ footer {
     margin: 0.5rem 2rem 0.5rem 2rem;
 }   
 
-.center-to-left {
-    border-style: none none solid none;
-    border-color: black;
-    border-width: 0.75rem;
-}
-
+/* ID selecctors */
 #about-me ~ p {
     display: flex;
     flex-direction: column;
-}
-
-#work{
-    font-size: 1.5rem;
 }
 
 #work ul {
@@ -184,25 +193,22 @@ footer {
     flex-wrap: wrap;
 }
 
+#project-one,
 #work ul li ~ li {
     width: 100%;
 }
 
-
-#project-one {
-    width: 100%;
-}
     
-
-#other-work a {
-    width: 100%;
-}
-
-/* Taken from module 02 miniproject */
+/* Taken from module 02 miniproject
+   Media queries */
 /* using a mobile-first approach, use `min-width` values going from narrow -> 
    wide for a responsive design */
 @media screen and (min-width: 768px) {
-
+    /* Readjusting the setting of elements when the screen widens */
+    h1,
+    header nav {
+	width: 45vw;
+    }    
     .banner {
         margin: 0 25% 0 0;
     }
@@ -213,10 +219,6 @@ footer {
         flex-wrap:wrap;
         align-content: center;
     }
-    h1,
-    header nav {
-	width: 45vw;
-    }    
     .center-to-left{
         border-style: none solid none none;
         border-color: black;
@@ -243,12 +245,10 @@ footer {
     #work ul li ~ li {
 	width: 50%;
     }
-  
 }
 
 /* media query for larger screens */
 @media screen and (min-width: 992px) {
-
     .banner {
         margin: 0 25% 0 0;
     }
@@ -259,11 +259,8 @@ footer {
         flex-wrap:wrap;
         align-content: center;
     }
-
     h1,
     header nav {
 	width: 45vw;
     }
-
-
 }
