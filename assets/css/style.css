@@ -24,23 +24,26 @@ header .header-banner {
 
 h1 {
     font-size: 4rem;
+    text-align: center;
+    width: 100vw;
 }
 
 
 header nav {
-    margin-right: 2rem;
-    float: inline-end;
     font-size: 2rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: flex;
+    justify-content: center;
+    width: 100vw;
 }
 
 header nav ul{
     display: flex;
     flex-direction: row;
-    justify-content: spacae-evenly;
+    justify-content: center;
     flex-wrap:wrap;
     align-content: center;
+
 }
 
 header nav ul li {
@@ -50,7 +53,7 @@ header nav ul li {
 h2 {
     font-size: 2.5rem;
 }
-    
+
 p {
     font-size: 1.5rem
 }
@@ -60,6 +63,11 @@ figure {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+figure:hover {
+    opacity: 0.5;
+    border: solid 3rem;
 }
 
 figure img {
@@ -74,8 +82,7 @@ figure figcaption {
     padding: 0.5rem 0.5rem 0.5rem 0.5rem;
     color: black;
     position: relative;
-    top: -10rem;
-    right: 25%;
+    top: -3rem;
 }
 
 footer {
@@ -124,6 +131,7 @@ footer {
 .projects,
 .horz-list {
     width: 100%;
+    padding:0.5rem;
 }
 
 .header-banner {
@@ -171,10 +179,6 @@ footer {
     width: 100%;
 }
     
-#project-one figcaption {
-    position: relative;
-    right: 25%;
-}
 
 #other-work a {
     width: 100%;
@@ -195,6 +199,13 @@ footer {
         flex-wrap:wrap;
         align-content: center;
     }
+
+    h1,
+    header nav {
+	width: 50vw;
+    }
+    
+    
     .center-to-left{
         border-style: none solid none none;
         border-color: black;
@@ -212,14 +223,14 @@ footer {
     .center-to-left {
 	width: 12.5%;
     }
+    .wide-view {
+	display:flex;
+	flex-direction:row;
+	flex-wrap: wrap;
+    }
     #work ul li ~ li {
 	width: 50%;
     }
-    #project-one figcaption {
-    position: relative;
-    right: 37.5%;
-    }
-
   
 }
 
