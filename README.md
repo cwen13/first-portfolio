@@ -11,7 +11,7 @@ interactive web portfolio.
 
 ## Usage
 
-Useage is simple just navigate to the URL.
+Useage is simple just navigate to the [URL](https://cwen13.github.io/first-portfolio/).
 
 ## Credits
 
@@ -31,4 +31,4 @@ bar and banner background image.
 
 This is the bottom section of the site with one of the project tiles being
 hovered over changing its opacity.
-![[Bottom section of my protfolio page](assets/images/site-bot.png)]
+![Bottom section of my protfolio page](assets/images/site-bot.png)
