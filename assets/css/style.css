@@ -3,7 +3,7 @@
   --project-border: red;
   --text-color: maroon;
   --background-color: grey;
-  --nav-bar-color: black;
+  --nav-bar-color:  #15a812;
 }
 
 /* place holder for universal styles */
@@ -25,7 +25,7 @@ h1 {
     font-size: 4rem;
     text-align: center;
     width: 100vw;
-    color: magenta;
+    color: black;
 }
 
 h2 {
